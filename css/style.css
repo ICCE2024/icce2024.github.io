@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  --black: #11213D;
+  --white: #FFF;
+  --blue: #4073DB;
+  --red: #C9245B;
+  --yellow: #FFAE00;
+  --primary: var(--blue);
+  --primary-2: var(--red);
+  --accent: var(--yellow);
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+html, body { margin: 0; }
+h1, h2, h3, h4, p, a { color: var(--black); }
+h1, h2, h3, h4 {
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.65;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: true;
+  line-height: 1.15;
+}
+
+h1,
+.text-size-h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 2.49em;
+}
+.text-size-h1 {
+  padding-bottom: 1em;
+}
+
+h2,
+.text-size-h2 { font-size: 2.07em; }
+
+h3,
+.text-size-h3 { font-size: 1.73em; }
+
+h4,
+.text-size-h4 { font-size: 1.44em; }
+
+h5,
+.text-size-h5 { font-size: 1.2em; }
+
+.text-caption { font-size: 0.83em; }
+
+small,
+.text-small {
+  font-size: 0.69em;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* Nav */
+header {
+}
+
+header nav.container {
+  padding: 20px 60px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  margin: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+header nav ul li a:focus,
+header nav ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header .logo {
+  width: auto;
+  height: 80px;
+}
+
+header .banner img {
+  width: 100%;
+  border-top: 1px solid var(--blue);
+  border-bottom: 1px solid var(--blue);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--blue);
+}
+footer .sponsors {
+  width: 100%;
+}
+
+article {
+  margin: 0 auto;
+}
+
+/* Utilities */
+.center {
+  text-align: center;
+}
+
+.content-60 {
+  padding: 60px 0;
+}
+
+.content-60 > * {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media(max-width: 780px) {
+  header nav.container {
+    padding: 10px 20px;
+  }
+  header .logo {
+    width: auto;
+    height: 60px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 60px 40px;
+  }
+  .content-60 > * {
+    width: 100%;
+  }
+}
