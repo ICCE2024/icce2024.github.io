@@ -12,6 +12,17 @@
   font-weight: 400;
 }
 
+.bg-blue {
+  background-color: #4073DB21;
+}
+.bg-red {
+  background-color: #C9245B21;
+}
+.bg-yellow {
+  background-color: #FFAE0021;
+}
+
+
 html, body { margin: 0; }
 h1, h2, h3, h4, p, a { color: var(--black); }
 h1, h2, h3, h4 {
@@ -172,4 +183,25 @@ article {
   .content-60 > * {
     width: 100%;
   }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table tr:hover > th,
+table tr:hover > td {
+  background-color: #11213D55;
+  cursor: default;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+  padding: 8px 16px;
+}
+
+table th {
+  font-weight: 700;
+  text-align: left;
 }
