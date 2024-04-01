@@ -125,5 +125,17 @@
         <img class="sponsors" src="./img/footer.webp" alt="">
       </div>
     </footer>
+    <script>
+      const trigger = document.querySelector('#dropdown-trigger')
+      trigger.addEventListener('click', evt => {
+        let parent = evt.currentTarget.closest('.dropdown')
+        parent.classList.toggle('open')
+        if(parent.classList.contains('open')) {
+          trigger.innerHTML = '▴'
+        } else {
+          trigger.innerHTML = '▾'
+        }
+      })
+    </script>
   </body>
 </html>
