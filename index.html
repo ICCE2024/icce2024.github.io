@@ -25,9 +25,17 @@
       <nav class="container">
         <a href="."><img src="./img/logo-horizontal.webp" alt="" class="logo"></a>
         <ul>
-          <li><a href="./callforpapers.html">Call for Papers</a></li>
-		  <li><a href="./dates.html">Important Dates</a></li>
-		  <li><a href="./organization.html">Organization</a></li>
+          <li class="dropdown">
+            <a href="./callforpapers.html">Call for Papers</a>
+            <button id="dropdown-trigger">▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="./cfp-c1.html">CFP 1</a></li>
+              <li><a href="./cfp-c2.html">CFP 2</a></li>
+              <li><a href="./cfp-c3.html">CFP 3</a></li>
+            </ul>
+          </li>
+          <li><a href="./dates.html">Important Dates</a></li>
+          <li><a href="./organization.html">Organization</a></li>
         </ul>
       </nav>
       <picture class="banner">
@@ -72,5 +80,17 @@
         <img class="sponsors" src="./img/footer.webp" alt="">
       </div>
     </footer>
+    <script>
+      const trigger = document.querySelector('#dropdown-trigger')
+      trigger.addEventListener('click', evt => {
+        let parent = evt.currentTarget.closest('.dropdown')
+        parent.classList.toggle('open')
+        if(parent.classList.contains('open')) {
+          trigger.innerHTML = '▴'
+        } else {
+          trigger.innerHTML = '▾'
+        }
+      })
+    </script>
   </body>
 </html>
