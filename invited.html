@@ -1,0 +1,104 @@
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./img/favicon-32.png" type="image/x-icon">
+    <title>Theme-Based Invited Speakers | ICCE 2024</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all">
+    <style>
+      #theme {
+        background-color: #FFAE0021;
+      }
+      #theme h1 {
+        margin-bottom: 2em;
+      }
+      #organizers {
+        background-color: #4073DB21;
+      }
+	  article img { width: 300px; float: left; margin-right: 8px; margin-bottom: 8px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="."><img src="./img/logo-horizontal.webp" alt="" class="logo"></a>
+        <ul>
+			<li><a href="./news.html">News</a></li>
+          <li class="dropdown">
+            <a href="./callforpapers.html">Call for Papers</a>
+            <button class="dropdown-trigger">▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="./cfp-c1.html">C1: AIED/ITS</a></li>
+              <li><a href="./cfp-c2.html">C2: CSCL</a></li>
+              <li><a href="./cfp-c3.html">C3: ALT</a></li>
+              <li><a href="./cfp-c4.html">C4: TEML</a></li>
+              <li><a href="./cfp-c5.html">C5: EGG</a></li>
+              <li><a href="./cfp-c6.html">C6: TELL</a></li>
+              <li><a href="./cfp-c7.html">C7: PTP</a></li>
+			  <li><a href="./submission.html">Paper Submission</a></li>
+              <li><a href="./wtie.html">Workshops / Tutorials / Interactive Events</a></li>
+              <li><a href="./wipp.html">WIPP</a></li>
+              <li><a href="./dsc.html">DSC</a></li>
+              <li><a href="./ecw.html">ECW</a></li>
+              <li><a href="./es.html">ES</a></li>
+              <li><a href="./sateluc.html">SATELUC</a></li>
+            </ul>
+          </li>
+          <li><a href="./dates.html">Important Dates</a></li>
+		  <li class="dropdown">
+			<a href="./program.html">Program</a>
+			<button class="dropdown-trigger">▾</button>
+			<ul class="dropdown-menu">
+				<li><a href="keynote.html">Keynote Speakers</a></li>
+				<li><a href="invited.html">Theme-Based Invited Speakers</a></li>
+			</ul>
+		  </li>
+          <li><a href="./organization.html">Organization</a></li>
+        </ul>
+      </nav>
+      <picture class="banner">
+        <source srcset="./img/banner.webp" media="all" />
+        <img src="./img/banner.jpg" alt="" />
+      </picture>
+    </header>
+    <section class="container full-width content-60">
+		<h1 class="center">Theme-Based Invited Speakers</h1>
+		<article>
+		<h3>Johanna Pöysä-Tarhonen</h3>
+		<img src="./img/invited_poysatarhonen.webp">
+		<p>
+		<span style="font-weight: bold;">Dr. Johanna Pöysä-Tarhonen</span> is a senior researcher at the Finnish Institute for Educational Research (FIER), University of Jyväskylä, Finland, and a Docent at the Philosophical Faculty, University of Eastern Finland. She holds a PhD in Instructional Technology from KU Leuven, Belgium. Much of her work has focused on collaborative learning practices in varied technology-rich educational settings, most recently on remote collaborative problem solving. Additionally, she maintains a keen interest in learning environments research, with her current focus on hybrid collaborative learning spaces as well as their scalability across different levels of education. She has led research projects and secured funding for studies in learning environments and Computer-Supported Collaborative Learning (CSCL), funded by the Research Council of Finland (formerly the Academy of Finland) and the Ministry of Education and Culture, Finland. She has published several research papers in esteemed international journals, field-defining books, and conference proceedings. 
+		</p>
+		<h5>Abstract</h5>
+		<p style="font-weight:bold;">How to Better Understand the Collaborative Component in Computer-Supported Collaborative Learning (CSCL): Current Landscape, Challenges and Future Prospects</p>
+		<p>
+		Given the ubiquity of collaboration in everyday learning environments, collaboration is still frequently presumed to manifest spontaneously, without requiring additional support. In the realm of Computer-Supported Collaborative Learning (CSCL), despite a substantial body of research in this field, what underlies successful collaboration and collaborative learning remains a challenge. Since its inception, research in Computer-Supported Collaborative Learning (CSCL) has drawn from a rich mixture of diverse theoretical and methodological underpinnings, merging three interrelated components: collaboration within various social learning formations, centred around a shared task, enabled by technologies. My talk explores the collaborative component within CSCL, with collaboration itself as the object of study. I contend that to focus on collaboration is important as the process of nurturing collaborative practices is likened to foster the development of additional capabilities supporting us to learn. By focusing on the recent CSCL research, including examples of my own work, I will discuss aspects related to the ‘anatomy’ of (un)successful collaboration. I will explore how we may unveil the complex interacting elements and dynamics of collaboration in CSCL environments through studying the very foundational basis of social interaction by leveraging the theories of joint attention and joint action as well as employing advanced empirical methods such as eye-tracking. I will also address the challenges posed by the increasing complexity of these types of data, particularly in terms of integrating theories and empirical evidence in this regard. I will conclude by focusing on the emerging opportunities and challenges of collaboration by the integration of AI in CSCL environments, while also raising the question of what collaboration entails within this context.
+		</p>
+		</article>
+
+	</section>
+
+    <footer>
+      <div class="container">
+        <img class="sponsors" src="./img/footer.webp" alt="">
+      </div>
+    </footer>
+    <script>
+      const triggers = document.querySelectorAll('.dropdown-trigger')
+	  for(let trigger of triggers) {
+      trigger.addEventListener('click', evt => {
+        let parent = evt.currentTarget.closest('.dropdown')
+        parent.classList.toggle('open')
+        if(parent.classList.contains('open')) {
+          trigger.innerHTML = '▴'
+        } else {
+          trigger.innerHTML = '▾'
+        }
+      })
+	  }
+    </script>
+  </body>
+</html>
