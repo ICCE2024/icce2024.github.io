@@ -243,3 +243,23 @@ table th {
 .dropdown.open .dropdown-menu a:hover {
   background: #4073DB21;
 }
+
+article.featured { padding: 16px 0; }
+article.featured + article.featured {
+border-top: 1px solid black;
+}
+article.featured img { width: 100%; }
+.bio {
+display: grid;
+grid-template-columns: 300px 1fr;
+grid-gap: 32px;
+margin-bottom: 8px;
+}
+.bio p {
+margin-top: 0;
+}
+@media(max-width: 780px) {
+.bio {
+	grid-template-columns: 1fr;
+	grid-auto-flow: rows;
+}
